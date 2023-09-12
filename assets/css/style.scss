@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth_wght.ttf")
+        format("truetype");
+}
+
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+$white: hsl(0, 0%, 100%);
+
+/* Mobile First*/
+main {
+    background-color: $violet;
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#container {
+    padding: 30px 30px;
+}
+
+#logo {
+    max-height: 30px;
+}
+
+#hero {
+    margin-top: 55px;
+
+    #img-div {
+        display: flex;
+        justify-content: center;
+        #mockup {
+            align-self: flex-start; /*neccesary to avoid vertical stretching*/
+            max-width: 100%;
+        }
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+
+        h1 {
+            font-size: 23px;
+            font-family: "Poppins";
+            color: $white;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "OpenSans";
+            line-height: 27px;
+            color: $white;
+        }
+
+        button {
+            font-size: 12px;
+            padding: 11px 75px;
+            color: $violet;
+            background-color: $white;
+            border: none;
+            border-radius: 30px;
+
+            &:hover {
+                color: $white;
+                background-color: $soft-magenta;
+            }
+
+            &:active {
+                background-color: $soft-magenta;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 5px 0 0;
+
+    i {
+        margin: 10px;
+        font-size: 20px;
+        color: $white;
+
+        &:hover {
+            color: $soft-magenta;
+        }
+
+        &:active {
+            color: $soft-magenta;
+        }
+    }
+}
+
+/* for sizes above 1024 */
+@media (min-width: 1024px) {
+    main {
+        max-height: 800px;
+        background-image: url("../images/bg-desktop.svg");
+        background-size: auto;
+    }
+
+    #container {
+        padding: 50px 70px;
+    }
+
+    #logo {
+        max-height: 50px;
+    }
+
+    #hero {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 55% auto;
+
+        #mockup {
+            max-height: 500px;
+        }
+
+        #info {
+            padding-left: 50px;
+            text-align: start;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 20px;
+                padding: 17px 70px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
