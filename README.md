@@ -3,7 +3,7 @@
 ## How to use
 
 You can download the code and start a server with the index.html file.
-Or try it live on [_this link_]().
+Or try it live on [_this link_](https://owaruuu.github.io/simple-landing-page-frontend-mentor-challenge-3/).
 
 ## Features
 

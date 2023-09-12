@@ -6,6 +6,10 @@
   font-family: "OpenSans";
   src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth_wght.ttf") format("truetype");
 }
+body {
+  margin: 0;
+}
+
 /* Mobile First*/
 main {
   background-color: hsl(257, 40%, 49%);
