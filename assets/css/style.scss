@@ -132,18 +132,22 @@ footer {
         #info {
             padding-left: 50px;
             text-align: start;
+            justify-content: flex-start;
+            align-items: flex-start;
 
             h1 {
-                font-size: 40px;
+                font-size: 42px;
+                margin-bottom: 10px;
             }
 
             p {
-                font-size: 16px;
+                font-size: 18px;
             }
 
             button {
                 font-size: 20px;
                 padding: 17px 70px;
+                
             }
         }
     }
